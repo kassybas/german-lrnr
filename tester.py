@@ -3,8 +3,8 @@ import random
 words = {}
 
 class WordPair(object):
-    def __init__(self, tur, eng):
-        self.tur = tur
+    def __init__(self, ger, eng):
+        self.ger = ger
         self.eng = eng
 
 def load_words():
@@ -23,9 +23,9 @@ def main():
         print("\n - - - - - - - - - - -")
         print(i+1)
         x = random.randrange(0, limit)
-        print("Eng: " + d[x].eng)
-        input("Tip: ")
-        print("Tur: " + d[x].tur)
+        print("->Eng: " + d[x].eng)
+        input("Guess: ")
+        print("-<Ger: " + d[x].ger)
         print("\n - - - - - - - - - - -")
 
 if __name__=="__main__":
